@@ -1,0 +1,19 @@
+svg {
+    width: 1440px;
+    height: 1000px;
+}
+
+
+.hidden {
+    position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
+}
+
+.correct {
+    color: black;
+}
+
+#hidden_word {
+    display: flex;
+}
