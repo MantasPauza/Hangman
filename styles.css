@@ -1,7 +1,24 @@
 svg {
-    width: 1440px;
-    height: 1000px;
+  margin: 0 auto;
 }
+
+line {
+  stroke: black;
+  stroke-width: 4;
+}
+
+#door1 {
+  transform-origin: 0% 100%;
+}
+
+#door2 {
+  transform-origin: 100% 100%;
+}
+
+.hide {
+  visibility: hidden;
+}
+
 
 .wrapper {
     display: flex;
@@ -9,6 +26,18 @@ svg {
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.top_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
@@ -19,10 +48,10 @@ svg {
 }
 
 .hidden {
-    position: absolute !important;
-   top: -9999px !important;
-   left: -9999px !important;
+  border-bottom: 1px solid grey;
+  width: 30px;
 }
+
 
 .correct {
     color: black;
@@ -64,6 +93,9 @@ svg {
 
 .letter_button:disabled {
   pointer-events: none;
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }
 
 .letter_button:hover {
