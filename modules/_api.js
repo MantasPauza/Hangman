@@ -6,7 +6,6 @@ function getData() {
 
 async function getGuessingWord() {
   const data = await getData();
-  console.log(data);
   return data.toString();
 }
 
